@@ -28,7 +28,7 @@ let CardsImg = [
 function App() {
     return (
         <>
-            <Navbar NLinks={NavLinks} />
+            <Navbar NBrand="Your Brand" NLinks={NavLinks} />
             <Cards Card={CardsImg} />
             <Test1 />
             <Test2 />

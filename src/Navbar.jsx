@@ -1,8 +1,10 @@
+import PropsTypes from "prop-types"
+
 function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                <span className="navbar-brand">Your Brand</span>
+                <span className="navbar-brand">{props.NBrand}</span>
                 <button className="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#Nav-Bar" >
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -26,3 +28,11 @@ function Navbar(props) {
     )
 }
 export default Navbar;
+
+Navbar.defaultProps = {
+    NBrand: "Web Brand"
+}
+
+Navbar.propTypes = {
+    NBrand: PropsTypes.number
+}
